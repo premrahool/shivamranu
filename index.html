@@ -1,34 +1,90 @@
 <html>
- <head>
-<style>
-#d1 
-{ position:absolute;
-top:0%;
-height:33%;
-width:102%;
-background-color:skyblue;
-}
-#d2 
-{ position:absolute;
-top:33%;
-height:34%;
-width:102%;
-background-color:lightyellow;
-}
-#d3 
-{ position:absolute;
-top:66%;
-height:67%;
-width:102%;
-background-color:lightpink;
-
-}
-</style>
+<head>
+  <title>Registration</title>
+  <link rel="stylesheet" type="text/css" href="">
+   
 </head>
 <body>
-<div id="d1"><h1><center><marquee>20MCA1500_PREM RAHOOL YADAV</marquee></center></h1> </div>
-<div id="d2"><marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();">  A sample page for cloud Lab mst exam whic deploy on microsft azure</marquee></div>
-<div id="d3"></div>
+	<!--// created by anuj kumar mahato
+	// dated 13/02/2021
+	// last update on 13/02/2021
+	-->
+	
+	<div class="registration-form">
+	<h1>Employee Registration page</h1>
+  <form name="form" method="post" action="employee.html">
+			 	
+	<div class="">
+  	  <label>Name</label>
+  	  <input type="text" name="username" value="" placeholder="Enter Name" required >
+  	<br><br>
+	</div>
+	
+	<div class="">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1" placeholder="Enter alpha-numeric Password" required>
+  	<br><br></div>
+	
+    <div class="">
+      <label>Re-Password</label>
+      <input type="password" name="password_2" placeholder="Enter alpha-numeric Password" required>
+    <br><br></div>
+	
+	<div class="">
+  	  <label>Email</label>
+  	  <input type="email" name="email" value="" placeholder="Enter Email"  required>
+  	<br><br></div>
+	
+	<div class="">
+      <label>contact number</label>
+      <input type="number" name="phone" placeholder="Enter conatact number" required>
+    <br><br></div>	
+	
+	<div class="">
+      <label>Address</label>
+      <textarea name="address" placeholder="Enter Employee Address" rows="4" cols="50" required> </textarea>
+    <br><br></div>
+	
+	<div class="">
+      <label>pincode</label>
+      <input type="number" name="postpin" placeholder="Enter postal-pin" required>
+    <br><br></div>
+	
+	<div class="">
+       <label>designation</label>
+	  <select name="designation">
+  <option value="teacher">Teacher</option>
+  <option value="Manager">Manager</option>
+  <option value="faculity staff">Faculity Staff</option>
+  <option value="security">Security</option>
+	</select> 
+	<br><br></div>
+
+  <div class=""> 
+      <label>Gender :</label>
+          <INPUT TYPE="RADIO" Name="gender" value="MALE" >Male 
+		  <INPUT TYPE="RADIO" Name="sex" value="FEMALE">Female
+		  <INPUT TYPE="RADIO" Name="sex" value="FEMALE">Transgender
+    <br><br></div> 
+	
+ <div class="">
+      <label>department</label>
+	  <select name="dept">
+  <option value="IT">IT</option>
+  <option value="Management">Management</option>
+  <option value="general faculity">Faculity</option>
+	</select>  
+	<br><br></div>
+
+	<button type="submit"  name="register_employee">Register</button>
+	<button type="reset" name="resetdata">reset</button>
+  	
+
+
+
+  </form>
+  </div>  
+  
+ 
 </body>
 </html>
-
